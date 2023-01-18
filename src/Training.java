@@ -1,10 +1,9 @@
-public class Training {
+public abstract class Training {
     private float averagePulse;
     private int trainingTime;
     private float weight;
 
-    public void consoleOutput() {
-    }
+    public abstract void consoleOutput();
 
     public float calorieExpenditure() {
         return 0.014f * getWeight() * getTrainingTime() * (0.12f * getAveragePulse() - 7f);
